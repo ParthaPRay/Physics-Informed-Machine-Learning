@@ -4,7 +4,7 @@ This repo contains for Physics Informed Neural Networks
 
 
 
-* Physics Informed Machine Learning: High level overview of AI znd ML in science and engineering
+* Physics Informed Machine Learning: High level overview of AI and ML in science and engineering
   
 https://youtu.be/JoFW2uSd3Uo?si=YjMDbddPnz5_hPNj
 
@@ -17,7 +17,7 @@ https://youtu.be/JoFW2uSd3Uo?si=YjMDbddPnz5_hPNj
 
 https://youtu.be/g-S0m2zcKUg?si=ugt7yfpRTCz0oar8
 
-*  AI/ML + Physics Part 3: Designing sn architecture [Physics Informed Machine Learning]
+*  AI/ML + Physics Part 3: Designing an architecture [Physics Informed Machine Learning]
 
   https://youtu.be/fiX8c-4K0-Q?si=8nlOz5C_WqtQXasI
 
