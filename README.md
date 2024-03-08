@@ -1,5 +1,5 @@
-# Physics-Informed-Machine-Learning
-This repo contains resources for Physics Informed Machine Learning or Physics Informed Neural Networks
+# Physics-Informed-Neural-Networks
+This repo contains for Physics Informed Neural Networks
 
 
 
