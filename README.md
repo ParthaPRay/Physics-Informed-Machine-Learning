@@ -23,6 +23,26 @@ This repo contains for Physics Informed Neural Networks
 
 * [Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next](https://link.springer.com/article/10.1007/s10915-022-01939-z)
 
+* Tutorials on deep learning, Python, and dissipative particle dynamics (https://github.com/lululxvi/tutorials/tree/master)
+
+  Deep Learning
+
+  2022-07-22, [Deep Learning for Scientists and Engineers: Introduction](https://github.com/lululxvi/tutorials/blob/master/20220722_sciml/sciml_introduction.pdf)
+    2021-12-10, [Physics-informed neural network (PINN)](https://github.com/lululxvi/tutorials/blob/master/20211210_pinn/pinn.pdf) [Video in Chinese](http://tianyuan.xmu.edu.cn/cn/minicourses/637.html)
+    2021-12-08, [Deep learning: Software installation & Code implementation](https://github.com/lululxvi/tutorials/blob/master/20211208_deep_learning_handson/deep_learning_handson.pdf) [Video in Chinese](http://tianyuan.xmu.edu.cn/cn/minicourses/637.html)
+    2021-12-08, [Deep learning: Concepts & Algorithms](https://github.com/lululxvi/tutorials/blob/master/20211208_deep_learning/deep_learning.pdf) [Video in Chinese](http://tianyuan.xmu.edu.cn/cn/minicourses/637.html)
+    2020-05-22, [Double-descent phenomenon in deep learning](https://github.com/lululxvi/tutorials/blob/master/20200522_double_descent/double_descent.pdf)
+    2019-08-16, [AutoML: Automated machine learning](https://github.com/lululxvi/tutorials/blob/master/20190816_autoML/autoML.pdf)
+    2019-08-16, [Improving simple models with confidence profiles](https://github.com/lululxvi/tutorials/blob/master/20190816_ProfWeight/ProfWeight.pdf)
+    2019-01-25, [Introduction to residual neural network (ResNet)](https://github.com/lululxvi/tutorials/blob/master/20190125_ResNet/ResNet.pdf)
+    2018-08-03, [Neural networks 101: Implementing feedforward neural nets using TensorFlow](https://github.com/lululxvi/tutorials/blob/master/20180803_neural_network/nn_tutorial.pdf)
+    2018-02-16, [4 years of generative adversarial networks (GANs)](https://github.com/lululxvi/tutorials/blob/master/20180216_GAN/gan.pdf)
+
+Python
+    [2018-01-24, Python 101: From zero to hero](https://github.com/lululxvi/tutorials/blob/master/20180124_Python/python_tutorial.pdf)
+
+Dissipative Particle Dynamics (DPD)
+    2015-10-08, [Scaling in DPD](https://github.com/lululxvi/tutorials/blob/master/20151008_DPD_scaling/DPD_scaling.pdf)
 
 * **Tutorial Series**
   
