@@ -478,6 +478,13 @@ NeuralOperators are also resolution invariant, so your trained operator can be a
 
 
 
+* NeuroMANCER 
+
+  Neural Modules with Adaptive Nonlinear Constraints and Efficient Regularizations (NeuroMANCER) is an open-source differentiable programming (DP) library for solving parametric constrained optimization problems, physics-informed system identification, and parametric model-based optimal control. NeuroMANCER is written in PyTorch and allows for systematic integration of machine learning with scientific computing for creating end-to-end differentiable models and algorithms embedded with prior knowledge and physics.
+
+  https://github.com/pnnl/neuromancer
+
+
 * neuraloperator
 
   Learning in infinite dimension with neural operators. neuraloperator is a comprehensive library for learning neural operators in PyTorch. It is the official implementation for Fourier Neural Operators and Tensorized Neural Operators.
@@ -532,6 +539,52 @@ The library DifferentialEquations.jl is a library for solving ordinary different
   https://sciml.ai/
 
   https://github.com/SciML/
+
+
+
+* PINN-force-torque-model
+
+  This repository contains the python codes for the physics-inspired neural network (PINN) model of forces and torques in particle-laden flows.
+
+  https://github.com/armanawn/PINN-force-torque-model
+
+
+
+* TPINN
+
+  This repository contains an implementation of Tensorized Physics Informed Neural Networks (TPINNs) for solving physics-based problem.
+
+  This repository contains an implementation of Tensorized Physics Informed Neural Networks (TPINNs) for solving physics-based problems. TPINNs combine the power of neural networks with the physical laws governing the system to improve accuracy and generalization. 🚀
+
+ https://github.com/mvanzulli/TPINN
+ 
+
+* DeepINN
+
+  A Physics-informed neural network (PINN) library.
+
+  DeepINN is a deep-learning framework for solving forward and inverse problem involving PDEs using physics-informed neural networks (PINNs).
+
+  The geometry module has been borrowed from [TorchPhysics](https://github.com/boschresearch/torchphysics).
+
+  https://praksharma.github.io/DeepINN/
+  
+  https://github.com/praksharma/DeepINN
+  
+
+* nPIML
+
+  The official respository for noise-aware physics-informed machine learning (nPIML)
+
+  Paper: https://iopscience.iop.org/article/10.1088/2632-2153/acb1f0
+  
+  https://github.com/nPIML-team/nPIML
+
+
+
+
+
+  
 # Physics Informed Neural Networks Apps
 
 * Physics-Informed Deep Learning and its Application in Computational Solid and Fluid Mechanics
