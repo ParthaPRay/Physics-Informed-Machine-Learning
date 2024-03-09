@@ -54,6 +54,52 @@ Dissipative Particle Dynamics (DPD)
   https://github.com/MJfadeaway/DAS
 
 
+* Neural Networks for Solving Differential Equations
+  
+  https://github.com/Isaac-Somerville/Neural-Networks-for-Solving-Differential-Equations
+  
+
+
+* BubbleNet
+
+  A physics-informed deep learning architecture for inferring bubble dynamics
+
+  ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/68538192-0151-4302-95dd-17051ef65975)
+   BubbleNet is a powerful tool not only for bubble flow, but also for multiphase flow & other fluid dynamics problems.
+
+
+  
+  https://github.com/hanfengzhai/BubbleNet
+
+
+
+* Physics-Informed-Neural-Network-PINN
+
+  Implementation of a Physics Informed Neural Network (PINN) written in Tensorflow v2, which is capable of solving Partial Differential Equations
+
+    ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/d6b6289b-7a47-4aa0-bc45-36c96b390222)
+
+  Paper: https://www.cs.uoi.gr/~lagaris/papers/TNN-LLF.pdf
+  
+  https://github.com/kochlisGit/Physics-Informed-Neural-Network-PINN-Tensorflow
+  
+
+* PINNSTRIPES
+
+  Physics-Informed Neural Network SurrogaTe for Rapidly Identifying Parameters in Energy Systems 
+
+  https://github.com/NREL/PINNSTRIPES
+  
+
+* fast-poisson-solver
+
+  The Poisson equation is an integral part of many physical phenomena, yet its computation is often time-consuming. This module presents an efficient method using physics-informed neural networks (PINNs) to rapidly solve arbitrary 2D Poisson problems. Focusing on the 2D Poisson equation, the method used in this module shows significant speed improvements over the finite difference method while maintaining high accuracy in various test scenarios.
+
+  The Poisson equation is an integral part of many physical phenomena, yet its computation is often time-consuming. This module presents an efficient method using physics-informed neural networks (PINNs) to rapidly solve arbitrary 2D Poisson problems.
+
+  https://github.com/matthiasnwt/fast-poisson-solver
+
+  
 * **Tutorial Series**
   
   * Physics Informed Machine Learning: High level overview of AI and ML in science and engineering
