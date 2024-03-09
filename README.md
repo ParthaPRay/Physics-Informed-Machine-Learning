@@ -3,8 +3,8 @@ This repo contains for Physics Informed Neural Networks
 
 
 
-# Physics Informed Neural Network Basics
 
+# Physics Informed Neural Network Basics
 
 
 
@@ -44,6 +44,20 @@ Python
 Dissipative Particle Dynamics (DPD)
     2015-10-08, [Scaling in DPD](https://github.com/lululxvi/tutorials/blob/master/20151008_DPD_scaling/DPD_scaling.pdf)
 
+
+
+
+
+* Parametric-NN-Models
+
+  Physics-Informed Neural Network, Finite Element Method enhanced neural network, and FEM data-based neural network
+  
+It is widely acknowledged that standard Multilayer Perceptrons (MLPs) have inherent limitations in effectively learning high-frequency signals. Consequently, Partial Differential Equations (PDEs) with periodic, sharp, and highly variable solutions pose a significant challenge when trained using [Physics-Informed Neural Networks (PINNs)](https://doi.org/10.1016/j.jcp.2018.10.045).
+
+
+
+  https://github.com/GaneshShivalingappa/Parametric-NN-Models
+  
 
 * DAS-PINNs
 
