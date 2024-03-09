@@ -325,6 +325,25 @@ NeuralOperators are also resolution invariant, so your trained operator can be a
   https://github.com/neuraloperator/neuraloperator
   
 
+* ScIANN
+
+  SciANN is a high-level artificial neural networks API, written in Python using Keras and TensorFlow backends. It is developed with a focus on enabling fast experimentation with different networks architectures and with emphasis on scientific computations, physics informed deep learing, and inversion. Being able to start deep-learning in a very few lines of code is key to doing good research.
+
+  Use SciANN if you need a deep learning library that:
+
+    - Allows for easy and fast prototyping.
+    - Allows the use of complex deep neural networks.
+    - Takes advantage TensorFlow and Keras features including seamlessly running on CPU and GPU.
+ 
+  For more details, check out [review paper] at (https://arxiv.org/abs/2005.08803) and the [documentation] at (https://sciann.com/).
+
+  https://github.com/sciann/sciann
+
+
+
+
+
+
 # Physics Informed Neural Networks Apps
 
 * Physics-Informed Deep Learning and its Application in Computational Solid and Fluid Mechanics
@@ -337,6 +356,54 @@ NeuralOperators are also resolution invariant, so your trained operator can be a
 * Physics informed neural network in JAX
 
   https://github.com/ASEM000/Physics-informed-neural-network-in-JAX
+
+* NVIDIA Modulus Core (Latest Release)
+
+  Open-source deep-learning framework for building, training, and fine-tuning deep learning models using state-of-the-art Physics-ML methods
+
+   [Base module that consists of the core components of the framework for developing Physics-ML models]. (https://docs.nvidia.com/deeplearning/modulus/modulus-core/index.html)
+  
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/f81d84c4-21d3-44b3-b390-8e9fef511def)
+
+   https://docs.nvidia.com/modulus/index.html
+
+   Modulus is an open source deep-learning framework for building, training, and fine-tuning deep learning models using state-of-the-art Physics-ML methods.
+
+Whether you are exploring the use of Neural operators like Fourier Neural Operators or interested in Physics informed Neural Networks or a hybrid approach in between, Modulus provides you with the optimized stack that will enable you to train your models at real world scale.
+
+This package is the core module that provides the core algorithms, network architectures and utilities that cover a broad spectrum of physics-constrained and data-driven workflows to suit the diversity of use cases in the science and engineering disciplines.
+
+
+
+    https://github.com/NVIDIA/modulus
+
+    https://developer.nvidia.com/modulus
+
+
+    Modulus Packages
+    
+      - Modulus (Beta): Open-source deep-learning framework for building, training, and fine-tuning deep learning models using state-of-the-art Physics-ML methods.
+      - [Modulus Symbolic (Beta)](https://github.com/NVIDIA/modulus-sym): Framework providing pythonic APIs, algorithms and utilities to be used with Modulus core to physics inform model training as well as higher level abstraction for domain experts.
+      
+      Domain Specific Packages
+       - [Earth-2 MIP (Beta)](https://github.com/NVIDIA/earth2mip): Python framework to enable climate researchers and scientists to explore and experiment with AI models for weather and climate.
+
+
+
+ * NVIDIA Modulus Sym (Latest Release)
+
+   NVIDIA Modulus Sym is a deep learning framework that blends the power of physics and partial differential equations (PDEs) with AI to build more robust models for better analysis.
+
+  There is a plethora of ways in which ML/NN models can be applied for physics-based systems. These can depend based on the availability of observational data and the extent of understanding of underlying physics. Based on these aspects, the ML/NN based methodologies can be broadly classified into forward (physics-driven), data-driven and hybrid approaches that involve both the physics and data assimilation.
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/922d0aa1-18ca-4465-8db2-b3fb6db6a2de)
+
+
+
+    https://docs.nvidia.com/deeplearning/modulus/modulus-sym/index.html
+
+    
+
 
 * GPT-PINN
 
