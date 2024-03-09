@@ -44,6 +44,16 @@ Python
 Dissipative Particle Dynamics (DPD)
     2015-10-08, [Scaling in DPD](https://github.com/lululxvi/tutorials/blob/master/20151008_DPD_scaling/DPD_scaling.pdf)
 
+
+* DAS-PINNs
+
+  A deep adaptive sampling method for solving high-dimensional partial differential equations.
+  
+  [TensorFlow implementation for DAS-PINNs: A deep adaptive sampling method for solving high-dimensional partial differential equations](https://arxiv.org/abs/2112.14038)
+
+  https://github.com/MJfadeaway/DAS
+
+
 * **Tutorial Series**
   
   * Physics Informed Machine Learning: High level overview of AI and ML in science and engineering
