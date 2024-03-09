@@ -15,8 +15,13 @@ This repo contains for Physics Informed Neural Networks
   https://github.com/maziarraissi/PINNs
 
 
+* [Artificial Neural Networks for Solving Ordinary and Partial Differential Equations]https://www.cs.uoi.gr/~lagaris/papers/TNN-LLF.pdf), Lagaris etal, IEEE TRANSACTIONS ON NEURAL NETWORKS, VOL. 9, NO. 5, SEPTEMBER 1998
 
+* [Physics Informed Deep Learning (Part I): Data-driven, Solutions of Nonlinear Partial Differential Equations](https://arxiv.org/pdf/1711.10561.pdf)
 
+* [Raissi et al, Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations], (https://doi.org/10.1016/j.jcp.2018.10.045)
+
+* [Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next](https://link.springer.com/article/10.1007/s10915-022-01939-z)
 
 
 * **Tutorial Series**
@@ -225,7 +230,22 @@ This repo contains for Physics Informed Neural Networks
 
   https://github.com/MartinAstro/GravNN
 
+* PINNS-TF2
+  
+  PINNs-TF2, Physics-informed Neural Networks (PINNs) implemented in TensorFlow V2.
 
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/43b3aaf0-5648-4f12-b191-01bcc97a316e)
+
+  https://github.com/rezaakb/pinns-tf2
+
+
+
+* LPINNs
+
+ To address some of the failure modes in training of physics informed neural networks, a Lagrangian architecture is designed to conform to the direction of travel of information in convection-diffusion equations, i.e., method of characteristic; The repository includes a pytorch implementation of PINN and proposed LPINN with periodic boundary condition.
+
+ https://github.com/rmojgani/LPINNs
 
 
 * PINN-FWI
@@ -250,7 +270,60 @@ This repo contains for Physics Informed Neural Networks
  https://github.com/ViktorC/PararealML
 
 
+* neuraloperator
 
+  Learning in infinite dimension with neural operators. neuraloperator is a comprehensive library for learning neural operators in PyTorch. It is the official implementation for Fourier Neural Operators and Tensorized Neural Operators.
+
+Unlike regular neural networks, neural operators enable learning mapping between function spaces, and this library provides all of the tools to do so on your own data.
+
+NeuralOperators are also resolution invariant, so your trained operator can be applied on data of any resolution.
+
+  https://neuraloperator.github.io/neuraloperator/dev/index.html
+
+  https://github.com/neuraloperator/neuraloperator
+
+
+* Burger-PINN
+
+  A Physics-Informed Neural Network to solving Burgers' equation.
+
+ Reference: [Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations](https://arxiv.org/abs/1711.10561)
+ Author's Github page: [https://maziarraissi.github.io/PINNs/](https://maziarraissi.github.io/PINNs/)
+
+  Check out other PINN project: [heat-pinn](https://github.com/314arhaam/heat-pinn)
+
+  https://github.com/314arhaam/burger-pinn
+
+
+* Heat-PINN
+  
+  A Physics-Informed Neural Network to solve 2D steady-state heat equation. A Physics-Informed Neural Network, to solve 2D steady-state heat equation, based on the methodology introduced in: Physics Informed Deep Learning (Part I): [Data-driven Solutions of Nonlinear Partial Differential Equations](https://arxiv.org/abs/1711.10561)
+
+  https://github.com/314arhaam/heat-pinn
+
+
+* NES
+
+   [Neural Eikonal Solver](https://github.com/sgrubas/NES): framework for modeling traveltimes via solving eikonal equation using neural networks. Neural Eikonal Solver (NES) is framework for solving factored eikonal equation using physics-informed neural network, for details see our paper: [early arXiv version](https://arxiv.org/abs/2205.07989) and [published final version](https://doi.org/10.1016/j.jcp.2022.111789). NES can simulate traveltimes of seismic waves in complex inhomogeneous velocity models.
+
+   https://github.com/sgrubas/NES
+
+    https://sgrubas.github.io/NES/
+
+
+
+* neuraloperator
+
+  Learning in infinite dimension with neural operators. neuraloperator is a comprehensive library for learning neural operators in PyTorch. It is the official implementation for Fourier Neural Operators and Tensorized Neural Operators.
+
+Unlike regular neural networks, neural operators enable learning mapping between function spaces, and this library provides all of the tools to do so on your own data.
+
+NeuralOperators are also resolution invariant, so your trained operator can be applied on data of any resolution.
+
+  https://neuraloperator.github.io/neuraloperator/dev/index.html
+
+  https://github.com/neuraloperator/neuraloperator
+  
 
 # Physics Informed Neural Networks Apps
 
@@ -290,6 +363,7 @@ This repo contains for Physics Informed Neural Networks
 
    ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/595ad8bb-6c15-4d6f-bfa6-9b7a70a1a3e0)
 
+* https://github.com/pkestene/MS-HPC-AI-GPU
 
 
 
