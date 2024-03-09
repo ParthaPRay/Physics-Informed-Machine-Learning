@@ -288,6 +288,96 @@ Dissipative Particle Dynamics (DPD)
   
   https://github.com/AmirMardan/pinn_fwi
 
+* EP-PINNs
+
+  EP-PINNs implementation for 1D and 2D forward and inverse solvers for the Aliev-Panfilov cardiac electrophysiology model. Also includes Matlab finite-differences solver for data generation. Implementation of Physics-Informed Neural Networks (PINNs) for the solution of electrophysiology (EP) problems in forward and inverse mode. 
+
+https://github.com/martavarela/EP-PINNs
+
+
+* pinns_tf2
+
+  Yet another PINN implementation
+
+  Tensoflow 2 implementation of Physics-Informed Neural Networks (PINNs) based on Physics Informed Deep Learning (Part I): [Data-driven Solutions of Nonlinear Partial Differential Equations](https://arxiv.org/pdf/1711.10561). Impleneted equations are
+
+    - Heat,
+    - Wave,
+    - Reaction-Diffusion,
+    - Stationary Advection-Diffusion,
+    - Poisson,
+    - Schrodinger's,
+    - Burger's,
+    - Klein Gordon.
+    - and Transport.
+
+  https://github.com/nimahsn/pinns_tf2
+
+
+
+* pinn4hcf
+
+
+  Physics-informed neural networks for highly compressible flows 🧠🌊
+
+  https://repository.tudelft.nl/islandora/object/uuid:6fd86786-153e-4c98-b4e2-8fa36f90eb2a
+  
+  https://github.com/wagenaartje/pinn4hcf
+
+
+* BOPINN
+
+
+  Bayesian optimized physics-informed neural network for parameter estimation
+
+  https://github.com/mahindrautela/BOPINN
+
+
+* porch
+
+  A PyTorch library for Physics-Informed Neural Networks (PINNs). Porch is a Python library that enables users to train Physics-Informed Neural Networks (PINNs) using the PyTorch framework. PINNs combine the power of neural networks with the governing laws of physics, allowing for the solution of complex physical problems with limited or noisy data.
+
+  https://github.com/leiterrl/porch
+
+
+* PINN-fokker-planck
+
+  Physics Informed Neural Networks for Fokker-Planck. TensorFlow PINN study for a couple of Fokker-Planck equations.
+
+  https://github.com/ElHuaco/PINN-fokker-planck
+
+
+* deepsysid
+
+  A system identification toolkit for multistep prediction using deep learning and hybrid methods. System identification toolkit for multistep prediction using deep learning and hybrid methods.
+
+  https://github.com/AlexandraBaier/deepsysid
+
+
+  
+* Adaptive-optimization-of-PINN
+
+  Optimizing Physics-Informed NN using Multi-task Likelihood Loss Balance Algorithm and Adaptive Activation Function Algorithm. This repository is used to reproduce PINN's inverse problem code about Burgers equation, plus multi-task likelihood loss balance algorithm and adaptive activation function algorithm.
+
+  These frameworks and algorithms are derived from the following papers:
+
+      - [Raissi, Maziar, Paris Perdikaris, and George E. Karniadakis. "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations." Journal of Computational Physics 378 (2019): 686-707.](https://www.sciencedirect.com/science/article/pii/S0021999118307125)
+      
+      - [Cipolla R, Gal Y, Kendall A. Multi-task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics[C]. 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2018.](https://openaccess.thecvf.com/content_cvpr_2018/html/Kendall_Multi-Task_Learning_Using_CVPR_2018_paper.html)
+      
+      - [Jagtap A D, Kawaguchi K, Karniadakis G E. Adaptive activation functions accelerate convergence in deep and Physics-informed neural Networks[J]. Journal of Computational Physics, 2020, 404: 109136.](https://www.sciencedirect.com/science/article/pii/S0021999119308411)
+
+  https://github.com/XinyuanLiao/Adaptive-optimization-of-PINN
+  
+
+* Adaptive self-supervision for PINNs
+
+  This repository contains PyTorch code to run adaptive resampling strategies for the self-supervision loss term in physics informed neural networks. The self-supervision data (collocation) points are resampled using the gradient of the loss and scheduled using a cosine scheduler that balances adaptivity with uniform sampling at user-defined intervals during training. For more details, see the [article](https://arxiv.org/abs/2207.04084)
+
+ ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/fb7db6dc-769c-4496-af44-5bf4b350db33)
+
+  https://github.com/ShashankSubramanian/adaptive-selfsupervision-pinns
+
 
 
 * PararealML
@@ -372,8 +462,30 @@ NeuralOperators are also resolution invariant, so your trained operator can be a
 
 
 
+* SciMLoutput
+  
+  Tutorials for doing scientific machine learning (SciML) and high-performance differential equation solving with open source software.
+
+  SciMLTutorials.jl holds PDFs, webpages, and interactive Jupyter notebooks showing how to utilize the software in the [SciML Scientific Machine Learning ecosystem] (https://sciml.ai/). This set of tutorials was made to complement the documentation and the devdocs by providing practical examples of the concepts. For more details, please consult the docs.
+
+  https://docs.sciml.ai/SciMLTutorialsOutput/stable/
+
+  https://github.com/SciML/SciMLTutorialsOutput
 
 
+* SciML
+
+  SciML: Open Source Software for Scientific Machine Learning
+
+  SciML contains a litany of modules for automating the process of model discovery and fitting. Tools like DiffEqParamEstim.jl and DiffEqBayes.jl provide classical maximum likelihood and Bayesian estimation for differential equation based models, while SciMLSensitivity.jl enables the deep hand-optimized methods for forward and adjoint senstivity (i.e. derivatives) of equation solvers. This enables the training of embedded neural networks inside of differential equations (neural differential equations or universal differential equations) for discovering unknown dynamical equations.
+
+  Advanced Equation Solvers
+  
+The library DifferentialEquations.jl is a library for solving ordinary differential equations (ODEs), stochastic differential equations (SDEs), delay differential equations (DDEs), differential-algebraic equations (DAEs), and hybrid differential equations which include multi-scale models and mixtures with agent-based simulations. Other solvers like NonlinearSolve.jl for f(x)=0 rootfinding problems, Optimization.jl for nonlinear optimization, etc. expand SciML to more equation types, offering high features and performance while integrating with machine learning frameworks through differentiability. 
+
+  https://sciml.ai/
+
+  https://github.com/SciML/
 # Physics Informed Neural Networks Apps
 
 * Physics-Informed Deep Learning and its Application in Computational Solid and Fluid Mechanics
@@ -461,6 +573,7 @@ This package is the core module that provides the core algorithms, network archi
    ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/595ad8bb-6c15-4d6f-bfa6-9b7a70a1a3e0)
 
 * https://github.com/pkestene/MS-HPC-AI-GPU
+* https://github.com/MartinuzziFrancesco/awesome-scientific-machine-learning
 
 
 
