@@ -2,6 +2,7 @@
 This repo contains for Physics Informed Neural Networks
 
 
+
 # Physics Informed Neural Network Basics
 
 
@@ -40,13 +41,16 @@ This repo contains for Physics Informed Neural Networks
 
 
 
-# Physics Informed Neural Network Tools
+
+# Physics Informed Neural Network Tools 
 
 * IDRLnet
 
   IDRLnet, a Python toolbox for modeling and solving problems through Physics-Informed Neural Network (PINN) systematically.
 
   https://github.com/idrl-lab/idrlnet
+
+
   
 * PINA
 
@@ -57,6 +61,11 @@ This repo contains for Physics Informed Neural Networks
   https://github.com/mathLab/PINA
 
 
+* PINN
+
+  Simple PyTorch Implementation of Physics Informed Neural Network (PINN)
+
+  https://github.com/nanditadoloi/PINN
 
 
 * FBPINNs
@@ -69,12 +78,67 @@ This repo contains for Physics Informed Neural Networks
 
     FBPINN vs PINN solving the high-frequency 1D harmonic oscillator
 
+   Physics-informed neural networks (PINNs) are a popular approach for solving forward and inverse problems related to PDEs
+    - However, PINNs often struggle to solve problems with high frequencies and/or multi-scale solutions
+    - This is due to the spectral bias of neural networks and the heavily increasing complexity of the PINN optimisation problem
+    - FBPINNs improve the performance of PINNs in this regime by combining them with domain decomposition, individual subdomain normalisation and flexible subdomain training schedules
+    - Empirically, FBPINNs significantly outperform PINNs (in terms of accuracy and computational efficiency) when solving problems with high frequencies and multi-scale solution
 
 
 
-  https://github.com/benmoseley/FBPINNs
+   https://github.com/benmoseley/FBPINNs
 
 
+
+
+* Simulai
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/af318d02-c58f-4708-a339-f7501ea2b55b)
+
+  A toolkit with data-driven pipelines for physics-informed machine learning. An extensible Python package with data-driven pipelines for physics-informed machine learning.
+
+  https://github.com/IBM/simulai
+
+
+
+* deepxde
+
+
+  A library for scientific machine learning and physics-informed learning
+
+  DeepXDE is a library for scientific machine learning and physics-informed learning. DeepXDE includes the following algorithms:
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/9e5a6933-02d9-45f7-8086-88e4ce950308)
+
+
+
+    ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/987bd82f-c0ce-4691-a0a8-ae8c56e4a126)
+
+    ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/97c99b52-df7d-4612-aed4-5c8c2fccd7df)
+
+     ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/82892319-86e2-4151-ab9d-00eb158010aa)
+
+
+ DeepXDE has implemented many algorithms as shown above and supports many features:
+
+    - enables the user code to be compact, resembling closely the mathematical formulation.
+    - complex domain geometries without tyranny mesh generation. The primitive geometries are interval, triangle, rectangle, polygon, disk, ellipse, star-shaped, cuboid, sphere, hypercube, and hypersphere. Other geometries can be constructed as constructive solid geometry (CSG) using three boolean operations: union, difference, and intersection. DeepXDE also supports a geometry represented by a point cloud.
+    - 5 types of boundary conditions (BCs): Dirichlet, Neumann, Robin, periodic, and a general BC, which can be defined on an arbitrary domain or on a point set; and approximate distance functions for hard constraints.
+    - 3 automatic differentiation (AD) methods to compute derivatives: reverse mode (i.e., backpropagation), forward mode, and zero coordinate shift (ZCS).
+    different neural networks: fully connected neural network (FNN), stacked FNN, residual neural network, (spatio-temporal) multi-scale Fourier feature networks, etc.
+    many sampling methods: uniform, pseudorandom, Latin hypercube sampling, Halton sequence, Hammersley sequence, and Sobol sequence. The training points can keep the same during training or be resampled (adaptively) every certain iterations.
+    - 4 function spaces: power series, Chebyshev polynomial, Gaussian random field (1D/2D).
+    - data-parallel training on multiple GPUs.
+    - different optimizers: Adam, L-BFGS, etc.
+    - conveniently save the model during training, and load a trained model.
+    - callbacks to monitor the internal states and statistics of the model during training: early stopping, etc.
+    - uncertainty quantification using dropout.
+    - float16, float32, and float64.
+    - many other useful features: different (weighted) losses, learning rate schedules, metrics, etc.
+
+  https://deepxde.readthedocs.io/
+  
+  https://github.com/lululxvi/deepxde
 
 
 * neurodiffeq
@@ -84,11 +148,148 @@ This repo contains for Physics Informed Neural Networks
   https://github.com/NeuroDiffGym/neurodiffeq
 
 
+* TensorDiffEq
+
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/70695e9f-1b92-4f31-99e8-43b8bb60d6e6)
+
+  Efficient and Scalable Physics-Informed Deep Learning and Scientific Machine Learning on top of Tensorflow for multi-worker distributed computing
+
+  What makes TensorDiffEq different?
+
+    - Completely open-source
+    
+    - Self-Adaptive Solvers for forward and inverse problems, leading to increased accuracy of the solution and stability in training, resulting in less overall training time
+    
+    - Multi-GPU distributed training for large or fine-grain spatio-temporal domains
+    
+    - Built on top of Tensorflow 2.0 for increased support in new functionality exclusive to recent TF releases, such as XLA support, autograph for efficent graph-building, and grappler support for graph optimization* - with no chance of the source code being sunset in a further Tensorflow version release
+    
+    - Intuitive interface - defining domains, BCs, ICs, and strong-form PDEs in "plain english"
+ 
+  Use TensorDiffEq if you require:
+
+    - A meshless PINN solver that can distribute over multiple workers (GPUs) for forward problems (inference) and inverse problems (discovery)
+    - Scalable domains - Iterated solver construction allows for N-D spatio-temporal support
+    - support for N-D spatial domains with no time element is included
+    - Self-Adaptive Collocation methods for forward and inverse PINNs
+    - Intuitive user interface allowing for explicit definitions of variable domains, boundary conditions, initial conditions, and strong-form PDEs
+
+  http://docs.tensordiffeq.io/
+  
+  https://github.com/tensordiffeq/TensorDiffEq
+
+
+* PINNS-Torch
+
+  PINNs-Torch, Physics-informed Neural Networks (PINNs) implemented in PyTorch.
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/c9b89012-ae92-4292-80ea-8b38e6a2f8d7)
+
+
+  Our package introduces Physics-Informed Neural Networks (PINNs) implemented using PyTorch. The standout feature is the incorporation of CUDA Graphs and JIT Compilers (TorchScript) for compiling models, resulting in significant performance gains up to 9x compared to the original TensorFlow v1 implementation
+ 
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/84a34808-c561-4da2-b66c-ba0c9c5427e0)
+  Each subplot corresponds to a problem, with its iteration count displayed at the top. The logarithmic x-axis shows the speed-up factor w.r.t the original code in TensorFlow v1, and the y-axis illustrates the mean relative error.
+  
+
+  https://github.com/rezaakb/pinns-torch
+
+
+* AttnPINN-for-RUL-Estimation
+
+  A Framework for Remaining Useful Life Prediction Based on Self-Attention and Physics-Informed Neural Networks
+  
+  https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation
+
+
+* Hippynn
+
+  It is a python library for atomistic machine learning. The hippynn python package - a modular library for atomistic machine learning with pytorch.
+
+  https://lanl.github.io/hippynn/
+
+  https://github.com/lanl/hippynn
+
+
+
+* GravNN
+
+  Repository for Gravity Field Modeling and Recovery using Machine Learning Methods.
+
+  This repository contains the GravNN python package whose purpose is to train Physics-Informed Neural Networks Gravity Models (PINN-GMs). The package itself contains the tensorflow models, physics constraints, hyperparameter configurations, data generators, and visualization tools used in training such models.
+
+  The Physics-Informed Neural Network Gravity Model (PINN-GM) aims to solve many of the limitations of past gravity representations including the ubiquitous spherical harmonic and polyhedral gravity models (used for planetary and small-body exploration respectively).
+  
+
+  https://github.com/MartinAstro/GravNN
+
+
+
+
+* PINN-FWI
+
+  PINN-FWI: performing physics-informed neural network for FWI
+
+  In this repository, I implemented the physics-informed neural network for full-waveform inversion. The networks is an autoencoder based on Dhara and Sen (2022) with some modifications. The architecture of their study is shown in the following figure.
+  ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/fd674146-0c68-42f3-8ec2-bf736e458239)
+
+  
+  https://github.com/AmirMardan/pinn_fwi
+
+
+
+* PararealML
+
+  PararealML is a differential equation solver library featuring a [Parareal](https://en.wikipedia.org/wiki/Parareal) framework based on a unified interface for initial value problems and various solvers including a number of machine learning accelerated ones. The library's main purpose is to provide a toolset to investigate the properties of the Parareal algorithm, especially when using machine learning accelerated coarse operators, across various problems. The library's implementation of the Parareal algorithm uses [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) via [mpi4py](https://mpi4py.readthedocs.io/en/stable/).
+
+  ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/2155ff37-7c74-4cbc-b3e2-309193b8e0dd)
+
+
+ https://github.com/ViktorC/PararealML
+
+
+
+
+# Physics Informed Neural Networks Apps
+
+* Physics-Informed Deep Learning and its Application in Computational Solid and Fluid Mechanics
+  
+  This repository is dedicated to provide users of interest with the ability to solve forward and inverse hydrodynamic shock-tube problems and plane stress linear elasticity boundary value problems using Physics-Informed Deep Learning (PIDL) techniques (W-PINNs-DE & W-PINNs). This repository contains PINNs code from each problem in Physics-Informed Deep Learning and its Application in Computational Solid and Fluid Mechanics (Papados, 2021)
+
+  https://github.com/alexpapados/Physics-Informed-Deep-Learning-Solid-and-Fluid-Mechanics
+
+
+* Physics informed neural network in JAX
+
+  https://github.com/ASEM000/Physics-informed-neural-network-in-JAX
+
+* GPT-PINN
+
+  Generative Pre-Trained Physics-Informed Neural Networks Implementation.
+
+  Generative Pre-Trained Physics-Informed Neural Networks toward non-intrusive Meta-learning of parametric PDEs
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/f3fa372f-7b92-4c4a-ad6e-492ac21cba58)
+
+   Paper: https://arxiv.org/abs/2303.14878
+   Talk: https://www.youtube.com/embed/KWaWH7xeVEg
+
+
+    https://github.com/skoohy/GPT-PINN
+
+
+  
 
 # Resources 
 
 * Steve Brunton, https://youtube.com/@Eigensteve?si=M1MmT4WQsXqa2v-h
 * https://github.com/topics/physics-informed-neural-networks
+* https://github.com/openhackathons-org/End-to-End-AI-for-Science
+
+   ![image](https://github.com/ParthaPRay/Physics-Informed-Neural-Networks/assets/1689639/595ad8bb-6c15-4d6f-bfa6-9b7a70a1a3e0)
+
 
 
 
